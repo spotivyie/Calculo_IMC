@@ -15,7 +15,9 @@ const Formulario = () => {
     }
 
     const resultadoSM = () => {
-        const divisao = peso / (altura * altura);
+        const alturaNumerica = parseFloat(altura);
+        const pesoNumerico = parseFloat(peso);
+        const divisao = pesoNumerico / (alturaNumerica * alturaNumerica);
 
         if (divisao <= 17){
             return(
